@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+.top-up {
+  margin-top: 20px;
+}
+
+.top-up button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 12px;
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top-up button:hover {
+  background-color: #2e8b57;
+}
+
+/* Modal สไตล์ */
+#confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cancel-button {
+  background-color: #32cd32;
+  color: white;
+}
+
+#single-roll-button {
+  background-color: #ffa500;
+  color: white;
+}
+
+#five-roll-button {
+  background-color: #ff4500;
+  color: white;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#result-list p {
+  font-size: 18px;
+  margin: 5px 0;
+}

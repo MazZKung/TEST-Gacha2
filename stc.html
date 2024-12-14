@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gacha</title>
+  <link rel="stylesheet" href="stlye.css">
+</head>
+<div>
+  <nav class="top-up" style="text-align: right">
+    <button onclick="topUpDiamonds(100)">เติม 100 เพชร</button>
+    <button onclick="topUpDiamonds(500)">เติม 500 เพชร</button>
+    <button onclick="topUpDiamonds(1000)">เติม 1000 เพชร</button>
+  <nav/>
+</div>
+
+<body>
+  <div class="container">
+    <h1>Gacha</h1>
+    <p>เพชรที่คุณมี: <span id="diamond-count">200</span> 💎</p>
+    <div class="buttons">
+      <button id="gacha-one-button">สุ่ม 1 ครั้ง (40 เพชร)</button>
+      <button id="gacha-five-button">สุ่ม 5+1 ครั้ง (200 เพชร)</button>
+    </div>
+    <div id="result">
+      <h3>ผลลัพธ์การสุ่ม:</h3>
+      <div id="result-list"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+<!-- Updated Modal for Gacha Confirmation -->
+<div id="confirm-modal" style="display: none;">
+  <div class="modal-content">
+    <h3>คุณต้องการสุ่ม Gacha ไหม?</h3>
+    <button id="single-roll-button" onclick="confirmGacha(1)">1 ครั้ง</button>
+    <button id="five-roll-button" onclick="confirmGacha(5)">5+1 ครั้ง</button>
+    <button id="cancel-button" onclick="closeModal()">ยกเลิก</button>
+  </div>
+</div>
+</html>
